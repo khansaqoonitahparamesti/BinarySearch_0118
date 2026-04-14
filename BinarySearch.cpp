@@ -8,8 +8,19 @@ int x;
 
 
 void input(){
-    
+    while (true)
+    {
+        cout << "Masukkan banyak elemen pada array (maksimal 10): ";
+        cin >> nPanjang;
+
+        if (nPanjang <= 10)
+        {
+            break;
+        }
+
+        
+    }
+
     
 }
-
 
