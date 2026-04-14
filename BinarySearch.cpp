@@ -113,7 +113,7 @@ void binarySearch(){
         cin >> ulang;
        
         
-    } 
+    } while (ulang == 'y' || ulang == 'Y');
     
     
 }
