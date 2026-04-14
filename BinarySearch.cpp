@@ -18,7 +18,10 @@ void input(){
             break;
         }
 
-        
+        else
+        {
+            cout << "\n[!]Jumlah elemen tidak valid. Silakan coba lagi.\n" << endl;
+        }
     }
 
     
