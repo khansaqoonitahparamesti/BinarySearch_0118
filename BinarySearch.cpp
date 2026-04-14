@@ -104,16 +104,18 @@ void binarySearch(){
             }
         } while (low <= high);
 
+        if (low > high)
+        {
+            cout << "\n[X]Elemen "<<x<<" tidak ditemukan dalam array\n";
+        }
+
+        cout << "\nIngin mencai lagi? (y/n): ";
+        cin >> ulang;
+       
         
+    } 
     
     
 }
 
-int main(){
-    input();
-    bubbleSortArray();
-    display();
-    binarySearch();
-    
-    return 0;
-}
+
