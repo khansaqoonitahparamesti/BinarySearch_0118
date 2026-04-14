@@ -23,6 +23,16 @@ void input(){
             cout << "\n[!]Jumlah elemen tidak valid. Silakan coba lagi.\n" << endl;
         }
     }
+    cout << "\n=====================\n";
+    cout << "\nMasukkan elemen array\n";
+    cout << "=========================\n";
+
+    for (int i = 0; i < nPanjang; i++)
+    {
+        cout << "Data ke-" << (i + 1) << "= ";
+        cin >> element[i];
+    }
+
 
     
 }
