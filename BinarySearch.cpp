@@ -72,3 +72,48 @@ void display(){
     cout << endl;
 }
 
+void binarySearch(){
+    char ulang;
+    do
+    {
+        cout << "\n==================\n";
+        cout << "Pencarian Binary Search\n";
+        cout << "==================\n";
+
+        cout << "Masukkan elemen yang ingin dicari: ";
+        cin >> x;
+
+        int low = 0;
+        int high = nPanjang - 1;
+
+        do {
+            int mid = (low+high) / 2;
+            
+            if (element[mid] == x)
+            {
+                cout << "\n[V]Elemen "<<x<<" ditemukan pada indeks ke-" << mid << "\n";
+                return;
+            }
+            if (x < element[mid])
+            {
+                high = mid - 1;
+            }
+            if (x > element[mid])
+            {
+                low = mid + 1;
+            }
+        } while (low <= high);
+
+        
+    
+    
+}
+
+int main(){
+    input();
+    bubbleSortArray();
+    display();
+    binarySearch();
+    
+    return 0;
+}
