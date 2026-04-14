@@ -23,17 +23,16 @@ void input(){
             cout << "\n[!]Jumlah elemen tidak valid. Silakan coba lagi.\n" << endl;
         }
     }
+
     cout << "\n=====================\n";
     cout << "\nMasukkan elemen array\n";
-    cout << "=========================\n";
+    cout << "=========================";
 
     for (int i = 0; i < nPanjang; i++)
     {
         cout << "Data ke-" << (i + 1) << "= ";
         cin >> element[i];
     }
-
-
     
 }
 
@@ -58,4 +57,18 @@ void bubbleSortArray(){
     
 }
 
+void display(){
+    cout << "\n=================\n";
+    cout << "Array setelah diurutkan:\n";
+    cout << "=================\n";
+    for (int j = 0; j < nPanjang; j++)
+    {
+        cout << element[j] ;
+	if (j < nPanjang - 1)
+        {
+            cout << "->";
+        }
+    }
+    cout << endl;
+}
 
